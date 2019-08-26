@@ -1,0 +1,58 @@
+@import './../variables/colors';
+
+%commonButtonStyles {
+    appearance: none;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    display: inline-block;
+    border-radius: 2rem;
+    outline: none;
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+}
+
+@mixin primaryButton {
+    @extend %commonButtonStyles;
+    border: none;
+    color: $whiteColor;
+    background-color: $highlight;
+    padding: 0 2.4rem;
+    &:disabled {
+        color: $defaultTextDarkColor;
+        background-color: $uiGrayLightColor;
+    }
+}
+
+@mixin secondaryButton {
+    @extend %commonButtonStyles;
+    padding: 0 2.4rem;
+    border: solid .1rem $uiGrayLightColor;
+    color: $defaultTextDarkColor;
+    background-color: $whiteColor;
+}
+
+@mixin iconButton {
+    @extend %commonButtonStyles;
+    font-size: 0;
+    padding: .6rem;
+    width: 4rem;
+    height: 4rem;
+    border: solid .1rem $uiGrayLightColor;
+    color: $defaultTextDarkColor;
+    background-color: $whiteColor;
+}
+
+@mixin iconSecondaryButton {
+    @extend %commonButtonStyles;
+    font-size: 0;
+    padding: .6rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    color: $whiteColor;
+    background-color: $uiGrayDarkColor;
+}

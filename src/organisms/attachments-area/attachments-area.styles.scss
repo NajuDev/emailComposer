@@ -1,0 +1,16 @@
+.attachments-area {
+    &__title {
+        font-size: 1.5rem;
+        margin: 0 0 1.2rem;
+        text-align: left;
+        font-weight: 500;
+        color: #333333;
+    }
+    &__thumbnails {
+        display: flex;
+        margin: 0 0 1.7rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

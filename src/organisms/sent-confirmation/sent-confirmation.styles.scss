@@ -1,0 +1,65 @@
+@import './../../styles/variables/colors';
+@import './../../styles/variables/borders';
+@import './../../styles/variables/shadows';
+@import './../../styles/variables/spacing';
+
+.sent-confirmation {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 6.6rem 9.6rem;
+    width: 71.2rem;
+    border-radius: 0.4rem;
+    background: $whiteColor;
+    box-shadow: $boxShadowType1;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        height: 8.5rem;
+        padding: 0 4rem;
+        background: $uiDarkColor;
+        border-radius: $defaultBorderRadius $defaultBorderRadius 0 0;
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $defaultTextLightColor;
+    }
+    &__message-details {
+        padding: 3.8rem 0 0;
+        margin: 0 auto .4rem;
+    }
+    &__message-subject {
+        margin: 0 auto .4rem;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: left;
+        color: $textDarkestColor;
+    }
+    &__message-body {
+        padding: 2.4rem 0;
+        font-size: 1.6rem;
+        text-align: left;
+        color: $textDarkestColor;
+        white-space: pre-line;
+    }
+    &__address-details {
+        display: block;
+        font-size: 1.2rem;
+        margin: 0;
+        text-align: left;
+        color: $defaultTextDarkColor;
+    }
+    &__email-address {
+        font-weight: 600;
+        color: $highlight;
+    }
+    &__attachments {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

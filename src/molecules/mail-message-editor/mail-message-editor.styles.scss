@@ -1,0 +1,12 @@
+@import './../../styles/variables/spacing';
+@import './../../styles/elements/inputs';
+
+.mail-message-editor {
+    &__textarea {
+        @extend %commonInputStyles;
+        padding-top: $defaultInputPadding;
+        padding-bottom: $defaultInputPadding;
+        height: 20rem;
+        resize: none;
+    }
+}

@@ -1,0 +1,15 @@
+@import './../../styles/variables/colors';
+@import './../../styles/elements/inputs';
+
+.email-input {
+    width: 100%;
+    &__label {
+        display: none;
+    }
+    &__input-field {
+        @extend %commonInputStyles;
+        &--invalid {
+            border-color: $errorColor;
+        }
+    }
+}

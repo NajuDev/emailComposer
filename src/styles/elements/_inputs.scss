@@ -1,0 +1,16 @@
+@import './../variables/colors';
+@import './../variables/borders';
+@import './../variables/spacing';
+
+%commonInputStyles {
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    min-height: 4rem;
+    width: 100%;
+    padding: 0 $defaultInputPadding;
+    margin-bottom: 1.5rem;
+    border-radius: $defaultBorderRadius;
+    border: solid 1px $uiGrayLightColor;
+    color: $textDarkestColor;
+    outline: none;
+}

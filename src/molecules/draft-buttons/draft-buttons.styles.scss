@@ -1,0 +1,10 @@
+@import './../../styles/mixins/buttons';
+
+.send-mail-button {
+    @include primaryButton;
+    display: flex;
+    font-size: 1.5rem;
+    &__icon {
+        margin: 0 .6rem 0 0;
+    }
+}

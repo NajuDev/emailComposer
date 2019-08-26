@@ -1,0 +1,10 @@
+@import './../../styles/elements/inputs';
+
+.subject-input {
+    &__label {
+        display: none;
+    }
+    &__input-field {
+        @extend %commonInputStyles;
+    }
+}

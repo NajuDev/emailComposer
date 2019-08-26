@@ -1,0 +1,11 @@
+@import './../../styles/mixins/buttons';
+
+.attach-files-button {
+    @include iconButton;
+    &__icon {
+        font-size: 2.6rem;
+    }
+    &__file-input {
+        display: none;
+    }
+}

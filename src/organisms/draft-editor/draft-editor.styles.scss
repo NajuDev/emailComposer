@@ -1,0 +1,38 @@
+@import './../../styles/variables/colors';
+@import './../../styles/variables/borders';
+@import './../../styles/variables/shadows';
+@import './../../styles/variables/spacing';
+
+
+.draft-editor {
+    margin: auto; // switch to flexbox later
+    width: 71.2rem;
+    border-radius: 0.4rem;
+    background: $whiteColor;
+    box-shadow: $boxShadowType1;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        height: 8.5rem;
+        padding: 0 4rem;
+        background: $uiDarkColor;
+        border-radius: $defaultBorderRadius $defaultBorderRadius 0 0;
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $defaultTextLightColor;
+    }
+    &__main {
+        padding: $defaultPadding;
+    }
+    &__controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
